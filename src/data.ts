@@ -35,7 +35,7 @@ export const games: Game[] = [
     ],
   },
   {
-    name: "Rancitelly Journey",
+    name: "Rancitelli Journey",
     description: "You woke up in the heart of Rancielli's \"Ferro di cavallo\" and you'll have to figure out what happened to you the night before, while battling the police and discovering Pescara's iconic places.",
     genres: ["text adventure game"],
     platforms: [Platform.Windows],
