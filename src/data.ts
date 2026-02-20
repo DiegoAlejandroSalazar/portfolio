@@ -23,7 +23,6 @@ export const games: Game[] = [
     engine: GameEngine.Unity,
     source: { name: "USER EXPERIENCE DESIGN E GRAFICA 2D", url: "https://learn.univpm.it/course/view.php?id=16401" },
     links: [
-      { source: LinkImageSource.Github, url: "https://github.com/YOUR_REPO" },
       { source: LinkImageSource.ItchIo, url: "https://diego-alejandro-salazar.itch.io/get-dressed" },
     ],
     media: [
@@ -179,6 +178,22 @@ export const games: Game[] = [
       { source: "/images/games/A clock's tale/Screenshot_6.png", type: MediaType.Image },
       { source: "/images/games/A clock's tale/Screenshot_7.png", type: MediaType.Image },
       { source: "/images/games/A clock's tale/Screenshot_8.png", type: MediaType.Image },
+    ],
+  },
+  {
+    name: "Shoot the bitch",
+    description: "Shoot the right monster!. (a copy of a game made by https://crowbarska.itch.io",
+    genres: ["2D", "point and click"],
+    platforms: [Platform.Windows],
+    engine: GameEngine.Unity,
+    links: [
+      { source: LinkImageSource.ItchIo, url: "https://diego-alejandro-salazar.itch.io/shoot-the-bitch" },
+    ],
+    media: [
+      { source: "/images/games/Shoot the bitch/Screenshot_1.png", type: MediaType.Image },
+      { source: "/images/games/Shoot the bitch/Screenshot_2.png", type: MediaType.Image },
+      { source: "/images/games/Shoot the bitch/Screenshot_3.png", type: MediaType.Image },
+      { source: "/images/games/Shoot the bitch/Screenshot_4.png", type: MediaType.Image },
     ],
   }
 ];
