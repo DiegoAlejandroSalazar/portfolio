@@ -97,23 +97,19 @@ export const games: Game[] = [
       { source: "/images/games/Cum & Go/Screenshot_10.png", type: MediaType.Image },
     ],
   },
-  // {
-  //   name: "Punti fragola",
-  //   description: "Give your friends scores on your phone for no apparent reason!",
-  //   genres: ["2D", "application"],
-  //   platforms: [Platform.Windows],
-  //   engine: GameEngine.Unity,
-  //   links: [
-  //     { source: LinkImageSource.Github, url: "https://github.com/DiegoAlejandroSalazar/puntiFragola" },
-  //     { source: LinkImageSource.ItchIo, url: "https://YOUR_ITCH.itch.io/GAME_NAME" },
-  //   ],
-  //   media: [
-  //     { source: "/images/games/Punti fragola/Screenshot_1.jpg", type: MediaType.Image },
-  //     { source: "/images/games/Punti fragola/Screenshot_2.jpg", type: MediaType.Image },
-  //     { source: "/images/games/Punti fragola/Screenshot_3.jpg", type: MediaType.Image },
-  //     { source: "/images/games/Punti fragola/Screenshot_4.jpg", type: MediaType.Image },
-  //   ],
-  // },
+  {
+    name: "Juce audio plug-in ",
+    description: "DSP Distortion, Delay & Reverb made on juce",
+    genres: ["plug-in", "audio", "C++"],
+    platforms: [Platform.Windows],
+    engine: GameEngine.Juce,
+    links: [
+      { source: LinkImageSource.Github, url: "https://github.com/Kypor/DistortionVST" },
+    ],
+    media: [
+      { source: "/images/games/Juce/Screenshot_1.png", type: MediaType.Image },
+    ],
+  },
   {
     name: "Unilingo",
     description: "Learn Japanese words and characters with this game even without a Wi-Fi connection.",

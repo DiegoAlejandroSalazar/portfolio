@@ -14,7 +14,8 @@ export enum Platform {
 export enum GameEngine {
   Unity = "Unity",
   Unreal = "Unreal",
-  Terminal = "Terminal"
+  Terminal = "Terminal",
+  Juce = "Juce"
 }
 
 export enum MediaType {
