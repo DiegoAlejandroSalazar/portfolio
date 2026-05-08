@@ -38,13 +38,13 @@ const CVButton = styled.a`
   padding: 10px 20px;
   font-size: 16px;
   color: white;
-  background-color: #007bff;
+  background-color: #f8b133;
   text-decoration: none;
   border-radius: 5px;
   transition: background 0.3s;
 
   &:hover {
-    background-color: #0056b3;
+    background-color: #ffce79;
   }
 `;
 

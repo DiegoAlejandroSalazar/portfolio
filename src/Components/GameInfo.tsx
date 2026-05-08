@@ -12,9 +12,9 @@ const GameInfoContainer = styled(Column)`
 `;
 
 const GameTitle = styled.h1`
-  font-family: "ZenDots", sans-serif;
-  font-size: 2rem;
-  color: #00ced1;
+  font-family: "KarmaSuture", sans-serif;
+  font-size: 1.9rem;
+  color: #fc6e5e;
   margin-top: 0;
   
   @media (max-width: 768px) {
@@ -42,10 +42,12 @@ const InfoTable = styled(Column)`
 `;
 
 const InfoRow = styled(Row)`
-  gap: 8px;
+  gap: 20px;
 `;
 
 const InfoKey = styled.span`
+  color: #  8e1508;
+  font-size: 1.6rem;
   font-weight: bold;
   min-width: 70px;
   text-align: left;

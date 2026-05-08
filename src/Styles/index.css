@@ -4,18 +4,21 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'PixelGame';
   src: url('../assets/fonts/PixelGame.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'ZenDots';
   src: url('../assets/fonts/ZenDots.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Oxanium';
   src: url('../assets/fonts/Oxanium.ttf') format('truetype');
@@ -23,40 +26,144 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'KarmaFuture';
+  src: url('../assets/fonts/Karma Future.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KarmaSuture';
+  src: url('../assets/fonts/Karma Suture.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBMPlexSansThin';
+  src: url('../assets/fonts/IBMPlexSans-Thin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBMPlexSansThinItalic';
+  src: url('../assets/fonts/IBMPlexSans-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'IBMPlexSansExtraLight';
+  src: url('../assets/fonts/IBMPlexSans-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBMPlexSansExtraLightItalic';
+  src: url('../assets/fonts/IBMPlexSans-ExtraLightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'IBMPlexSansLight';
+  src: url('../assets/fonts/IBMPlexSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBMPlexSansLightItalic';
+  src: url('../assets/fonts/IBMPlexSans-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'IBMPlexSansMedium';
+  src: url('../assets/fonts/IBMPlexSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBMPlexSansMediumItalic';
+  src: url('../assets/fonts/IBMPlexSans-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'IBMPlexSansSemiBold';
+  src: url('../assets/fonts/IBMPlexSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBMPlexSansSemiBoldItalic';
+  src: url('../assets/fonts/IBMPlexSans-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'IBMPlexSansBold';
+  src: url('../assets/fonts/IBMPlexSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBMPlexSansBoldItalic';
+  src: url('../assets/fonts/IBMPlexSans-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+
 body {
   margin: 0;
   padding: 0;
   font-size: 30px;
-  font-family: 'Oxanium', 'Oxygen', sans-serif;
+  font-family: 'IBMPlexSansBold', 'Oxygen', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
-  background-image: url('../assets/images/Background.jpg');
+
+  /*background-image: url('../assets/images/Background.jpg');*/
+  background-color: #01193a;
   background-repeat: repeat;
   background-size: 500px;
   color: #ffffff;
 }
 
 a {
-  color: #4e9f3d;
+  color: #ffefd6;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #3e8f32;
+  color: #f6f7f8;
 }
 
-input, select, textarea {
-  font-family: 'Rubik', sans-serif;
+input,
+select,
+textarea {
+  font-family: 'IBMPlexSansBoldItalic', sans-serif;
   padding: 0.6em;
   margin: 0.5em 0;
   border: 1px solid #777777;
   background-color: #222222;
   color: #ffffff;
   border-radius: 4px;
- 
+
 }
+
 ::-webkit-scrollbar {
   width: 4px;
   height: 12px;
@@ -70,5 +177,5 @@ input, select, textarea {
 ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 10px;
   border-radius: 10px;
-  background: rgba(163, 155, 155, 0.8); 
+  background: rgba(163, 155, 155, 0.8);
 }

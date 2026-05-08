@@ -38,7 +38,7 @@ const PopupOverlay = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1000;
+  z-index: 1000; 
 `;
 
 const PopupImage = styled.img`
@@ -48,6 +48,7 @@ const PopupImage = styled.img`
   @media (max-width: 768px) {
     max-width: 90%;
     max-height: 90%;
+    
   }
 `;
 
@@ -79,7 +80,7 @@ const BigMedia: React.FC<MediaItem> = ({ source, type }) => {
           <video
             src={`${process.env.PUBLIC_URL}${source}`}
             controls
-            style={{ width: "70%", height: "100%", objectFit: "contain", backgroundColor: "black", }}
+            style={{ width: "70%", height: "100%", objectFit: "cover", backgroundColor: "black", }}
           />
         )}
 

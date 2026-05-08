@@ -12,12 +12,14 @@ export const GameMediaContainer = styled(Column)`
   }
 `;
 
-export const LargeMediaWrapper = styled(Row)<{ $isFading: boolean }>`
+export const LargeMediaWrapper = styled(Row) <{ $isFading: boolean }>`
   width: 100%;
   height: 320px;
   justify-content: center;
   opacity: ${({ $isFading }) => ($isFading ? 0 : 1)};
   transition: opacity 0.3s ease-in-out;
+  
+  
 `;
 
 export const ThumbnailContainer = styled(Row)`
@@ -51,6 +53,9 @@ export const ThumbnailWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  
+  
+  
 `;
 
 export const Thumbnail = styled.img<{ $isSelected: boolean }>`
@@ -60,7 +65,7 @@ export const Thumbnail = styled.img<{ $isSelected: boolean }>`
   object-fit: cover;
   cursor: pointer;
   border-radius: 5px;
-  border: 3px solid ${({ $isSelected }) => ($isSelected ? "#4e9f3d" : "transparent")};
+  border: 3px solid ${({ $isSelected }) => ($isSelected ? "#f8b133" : "transparent")};
   transform: ${({ $isSelected }) => ($isSelected ? "scale(1.1)" : "none")};
   transition: transform 0.1s ease-in-out;
 `;
@@ -86,33 +91,43 @@ export const PlayIcon = styled.button`
   &:before {
     content: "▶";
     font-size: 16px;
-    margin-left: 2px;
+    margin-left: 3px;
+    margin-top :-1px;
   }
 `;
 
-export const Arrow = styled.button`
+interface ArrowProps {
+  direction: 'left' | 'right';
+}
+
+export const Arrow = styled.button<ArrowProps>`
   background: rgba(255, 255, 255, 0.3);
   border: none;
-  padding: 10px;
   color: black;
   cursor: pointer;
   font-size: 20px;
   border-radius: 50%;
-  transition: background 0.3s ease;
   width: 40px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0;
+  transition: all 0.3s ease;
+
+  text-indent: 0px; /* Sposta il carattere a sinistra */
+  padding-bottom: 2px; /* Lo spinge leggermente su */
+
+  padding-right: ${props => props.direction === 'left' ? '3px' : '0'};
+  padding-left: ${props => props.direction === 'right' ? '3px' : '0'};
 
   &:hover {
     background: rgba(255, 255, 255, 0.6);
   }
 
   @media (max-width: 768px) {
-    font-size: 16px;
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
   }
 `;
 
@@ -244,6 +259,7 @@ const GameMedia: React.FC<GameMediaProps> = ({ media }) => {
 
   const nextMedia = () => updateMediaIndex((currentIndex + 1) % media.length);
   const prevMedia = () => updateMediaIndex((currentIndex - 1 + media.length) % media.length);
+  
 
   return (
     <GameMediaContainer>
@@ -255,7 +271,7 @@ const GameMedia: React.FC<GameMediaProps> = ({ media }) => {
       </LargeMediaWrapper>
 
       <ThumbnailContainer>
-        <Arrow onClick={prevMedia}>◀</Arrow>
+        <Arrow direction="left" onClick={prevMedia}>◀</Arrow>
 
         <Thumbnails ref={thumbnailsContainerRef}>
           {media.map((item, index) => {
@@ -265,8 +281,8 @@ const GameMedia: React.FC<GameMediaProps> = ({ media }) => {
             const thumbnailSrc = isYouTube
               ? getYouTubeThumbnail(item.source)
               : isVideo
-              ? videoThumbnails[index] || "/video-thumbnail.png" // usa dataURL se pronto, altrimenti fallback
-              : `${process.env.PUBLIC_URL}${item.source}`;
+                ? videoThumbnails[index] || "/video-thumbnail.png" // usa dataURL se pronto, altrimenti fallback
+                : `${process.env.PUBLIC_URL}${item.source}`;
 
             return (
               <ThumbnailWrapper key={index}>
@@ -285,7 +301,7 @@ const GameMedia: React.FC<GameMediaProps> = ({ media }) => {
           })}
         </Thumbnails>
 
-        <Arrow onClick={nextMedia}>▶</Arrow>
+        <Arrow direction="right" onClick={nextMedia}>▶</Arrow>
       </ThumbnailContainer>
     </GameMediaContainer>
   );
