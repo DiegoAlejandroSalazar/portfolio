@@ -1,17 +1,31 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.f272692b.css",
-    "main.js": "/portfolio/static/js/main.93b514fc.js",
+    "main.css": "/portfolio/static/css/main.96b43db4.css",
+    "main.js": "/portfolio/static/js/main.77f597e3.js",
+    "static/media/IBMPlexSans-ThinItalic.ttf": "/portfolio/static/media/IBMPlexSans-ThinItalic.061993f72f9c1ae84aae.ttf",
+    "static/media/IBMPlexSans-ExtraLightItalic.ttf": "/portfolio/static/media/IBMPlexSans-ExtraLightItalic.6a1007ec749544fffdc7.ttf",
+    "static/media/IBMPlexSans-LightItalic.ttf": "/portfolio/static/media/IBMPlexSans-LightItalic.f9416ba458b4f5a83be1.ttf",
+    "static/media/IBMPlexSans-SemiBoldItalic.ttf": "/portfolio/static/media/IBMPlexSans-SemiBoldItalic.7465c1cbf0528ffe920c.ttf",
+    "static/media/IBMPlexSans-MediumItalic.ttf": "/portfolio/static/media/IBMPlexSans-MediumItalic.387bc267593f95f58853.ttf",
+    "static/media/IBMPlexSans-BoldItalic.ttf": "/portfolio/static/media/IBMPlexSans-BoldItalic.e7484f568b4e0d7d721b.ttf",
+    "static/media/IBMPlexSans-Thin.ttf": "/portfolio/static/media/IBMPlexSans-Thin.24b87c485a4fc63f5c81.ttf",
+    "static/media/IBMPlexSans-ExtraLight.ttf": "/portfolio/static/media/IBMPlexSans-ExtraLight.861fe0574430323cf060.ttf",
+    "static/media/IBMPlexSans-Light.ttf": "/portfolio/static/media/IBMPlexSans-Light.e31eac9ab7c70dcd5325.ttf",
+    "static/media/IBMPlexSans-SemiBold.ttf": "/portfolio/static/media/IBMPlexSans-SemiBold.86f1834ae1f8c9200ac6.ttf",
+    "static/media/IBMPlexSans-Medium.ttf": "/portfolio/static/media/IBMPlexSans-Medium.88e1f516fd823b7d58ee.ttf",
+    "static/media/IBMPlexSans-Bold.ttf": "/portfolio/static/media/IBMPlexSans-Bold.ad66eef3335c70ef554d.ttf",
+    "static/media/Karma Future.otf": "/portfolio/static/media/Karma Future.d180eda15fa3746a590f.otf",
     "static/media/Oxanium.ttf": "/portfolio/static/media/Oxanium.50bb18b058c797a89438.ttf",
+    "static/media/Karma Suture.otf": "/portfolio/static/media/Karma Suture.ba1eacb78fec8229330e.otf",
     "static/media/PhoenixGaming.ttf": "/portfolio/static/media/PhoenixGaming.52b75a56ef9f70c20259.ttf",
     "static/media/ZenDots.ttf": "/portfolio/static/media/ZenDots.ad9e0d65654bb49213b6.ttf",
     "static/media/PixelGame.otf": "/portfolio/static/media/PixelGame.a7040ee1df82fd46813b.otf",
     "index.html": "/portfolio/index.html",
-    "main.f272692b.css.map": "/portfolio/static/css/main.f272692b.css.map",
-    "main.93b514fc.js.map": "/portfolio/static/js/main.93b514fc.js.map"
+    "main.96b43db4.css.map": "/portfolio/static/css/main.96b43db4.css.map",
+    "main.77f597e3.js.map": "/portfolio/static/js/main.77f597e3.js.map"
   },
   "entrypoints": [
-    "static/css/main.f272692b.css",
-    "static/js/main.93b514fc.js"
+    "static/css/main.96b43db4.css",
+    "static/js/main.77f597e3.js"
   ]
 }
